@@ -14,3 +14,5 @@ Use python setup.py build_ext --inplace to build the extension in the working di
 that we want to use in the extension (This represents our public API)
 
 - queue.pyx: Implements the API defined in cqueue.pxd
+
+- test.py: Unitary test for the class Queue
