@@ -1,9 +1,9 @@
 '''
 Example extracted from the official documentation of Cython: https://cython.readthedocs.io/en/latest/src/tutorial/cython_tutorial.html
 Execute python setup.py build_ext --inplace to build the extension in the working directory,
-and then run this command: python -c "from fib import fib; fib(15)" to test the fibbonaci function defined in the extension
+and then run this command: python -c "from queue import Queue; Queue()" to create a new Queue object.
 
-You can do both things with a single command: python setup.py build_ext --inplace && python -c "from fib import fib; fib(15)"
+You can do both things with a single command: python setup.py build_ext --inplace && python -c "from queue import Queue; Queue()"
 '''
 
 from distutils.core import setup
