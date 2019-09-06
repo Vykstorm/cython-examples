@@ -1,0 +1,16 @@
+
+This example shows how to use an existing library C by writing an extension using
+Cython (it follows this guide: https://cython.readthedocs.io/en/latest/src/tutorial/clibraries.html)
+
+The goal of this example is to port the implementation of the class Queue defined in the CAlg library (http://c-algorithms.sourceforge.net/)
+into Python.
+
+We write the next source files:
+
+- setup.py: This is used to build our Cython extension.
+Use python setup.py build_ext --inplace to build the extension in the working directory.
+
+- cqueue.pxd: Contains a subset of routines & classes defined in the header queue.h in the CAlg library
+that we want to use in the extension (This represents our public API)
+
+- queue.pyx: Implements the API defined in cqueue.pxd
